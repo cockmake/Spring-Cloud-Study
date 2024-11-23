@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: item-service
+  profiles:
+    active: local
+  cloud:
+    nacos:
+      config:
+        file-extension: yaml
+        shared-configs:
+          - data-id: shared-jdbc.yml
+          - data-id: shared-log.yml
+          - data-id: shared-swagger.yml
+          - data-id: shared-seata.yml
+        password: make
+        username: nacos
+      discovery:
+        server-addr: ${hm.cloud.nacos-addr}
+        password: make
+        username: nacos
+    sentinel:
+      http-method-specify: true
+      transport:
+        dashboard: localhost:8090

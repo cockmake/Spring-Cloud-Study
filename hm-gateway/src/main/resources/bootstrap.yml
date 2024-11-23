@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: gateway-service
+  profiles:
+    active: local
+  cloud:
+    nacos:
+      config:
+        password: make
+        username: nacos
+        file-extension: yaml
+        shared-configs:
+          - data-id: shared-log.yml
+      discovery:
+        password: make
+        username: nacos
+        server-addr: ${hm.cloud.nacos-addr}
+    gateway:
+      default-filters:
+        - AddRequestHeader=X-Request-color, blue
+  jackson:
+    time-zone: Asia/Shanghai

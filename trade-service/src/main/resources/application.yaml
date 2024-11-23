@@ -1,0 +1,9 @@
+server:
+  port: 8100
+hm:
+  db:
+    database: hm-trade
+  swagger:
+    title: 黑马商城接口文档
+    desc: 黑马商城接口文档
+    package-name: com.hmall.trade.controller

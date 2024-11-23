@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: cart-service
+  profiles:
+    active: local
+  cloud:
+    nacos:
+      config:
+        shared-configs:
+          - data-id: shared-jdbc.yml
+          - data-id: shared-log.yml
+          - data-id: shared-swagger.yml
+          - data-id: shared-seata.yml
+        file-extension: yaml
+        username: nacos
+        password: make
+      discovery:
+        server-addr: ${hm.cloud.nacos-addr}
+        username: nacos
+        password: make
+    sentinel:
+      http-method-specify: true
+      transport:
+        dashboard: localhost:8090

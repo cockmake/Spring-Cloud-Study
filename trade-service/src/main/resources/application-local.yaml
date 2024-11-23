@@ -1,0 +1,8 @@
+hm:
+  db:
+    host: 127.0.0.1 # 修改为你自己的虚拟机IP地址
+    username: root
+    pw: 123456
+    port: 13306
+  cloud:
+    nacos-addr: 127.0.0.1:8848

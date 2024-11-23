@@ -1,0 +1,100 @@
+docker-compose.yml
+Dockerfile
+
+# 编译输出目录
+/target/
+/build/
+
+# 日志文件
+*.log
+*.log.*
+logs
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE 文件
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+
+# Eclipse
+.project
+.classpath
+.settings/
+*.launch
+
+# VS Code
+.vscode/
+
+# Maven
+/.mvn/
+/pom.xml.tag
+/pom.xml.releaseBackup
+/pom.xml.versionsBackup
+/pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+
+# Gradle
+.gradle/
+/build/
+!gradle-wrapper.jar
+gradle-app.setting
+.gradle-cache/
+
+# Spring Boot 特定文件
+*.springBeans
+spring-boot-loader/
+
+# 临时文件
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# 环境配置文件（根据需求决定是否需要）
+# 如果配置文件中包含敏感信息（如密码或密钥），建议添加到 .gitignore 中
+application.yml
+application-*.yml
+application.properties
+application-*.properties
+
+# 数据库文件
+*.db
+*.sql
+*.sqlite
+
+# 本地测试文件
+.env
+*.local
+test-output/
+
+# Docker
+*.env
+docker-compose.override.yml
+docker-compose.local.yml
+*.pid
+tmp/
+
+# Node.js 如果项目中使用前端模块
+node_modules/
+yarn.lock
+package-lock.json
+
+# Kubernetes
+*.kubeconfig
+
+# CI/CD 工具
+/.github/
+/.gitlab-ci.yml
+
+# 本地运行生成的文件
+*.class
+*.jar
+*.war
+*.ear
