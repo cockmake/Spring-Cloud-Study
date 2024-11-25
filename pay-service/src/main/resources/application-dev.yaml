@@ -1,6 +1,7 @@
 hm:
   db:
     host: mysql-docker
+    username: root
     pw: 123456
     port: 3306
   cloud:

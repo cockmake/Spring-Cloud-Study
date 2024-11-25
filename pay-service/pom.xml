@@ -26,10 +26,24 @@
       <groupId>com.alibaba.cloud</groupId>
       <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
     </dependency>
+    <dependency>
+      <groupId>com.alibaba.cloud</groupId>
+      <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+    </dependency>
     <!--seata-->
     <dependency>
       <groupId>com.alibaba.cloud</groupId>
       <artifactId>spring-cloud-starter-alibaba-seata</artifactId>
+    </dependency>
+    <!--bootstrap-->
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-bootstrap</artifactId>
+    </dependency>
+    <!--sentinel-->
+    <dependency>
+      <groupId>com.alibaba.cloud</groupId>
+      <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
     </dependency>
     <!--common-->
     <dependency>
@@ -37,7 +51,6 @@
       <artifactId>hm-common</artifactId>
       <version>1.0.0</version>
     </dependency>
-
     <!--openfeign-->
     <dependency>
       <groupId>org.springframework.cloud</groupId>
